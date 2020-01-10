@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+    <section>
+        <div></div>
+    </section>
+    <div class="hot-head">
+        <h2>Other info and current issues </h2>
+        <span> double click on card to set priority </span>
+    </div>
+
+    <section id="section-two">
+
+
+        <div class="basic-box">
+            <h3>Warehouses current fill</h3>
+            <div class="warehouse">
+                <li>
+                    <h6>warehouse "North"</h6><span class="bar"><span class="bar-fill" style='width: 90%'></span></span>
+                </li>
+                <li>
+                    <h6>warehouse "South"</h6><span class="bar"><span class="bar-fill" style='width: 72%'></span></span>
+                </li>
+                <li>
+                    <h6>warehouse "East"</h6><span class="bar"><span class="bar-fill" style='width: 40%'></span></span>
+                </li>
+                <li>
+                    <h6>warehouse "West"</h6><span class="bar"><span class="bar-fill" style='width: 44%'></span></span>
+                </li>
+
+            </div>
+        </div>
+        <div class="basic-box">
+            <h3>pączuchy</h3>
+        </div>
+        <div class="basic-box">
+            <h3>Weekly production income share</h3>
+            <div id="piechart" style="width: 250px; height: 260px;"></div>
+        </div>
+        <div class="basic-box">
+
+        </div>
+        <div class="basic-box"></div>
+        <div class="basic-box"></div>
+        <div class="basic-box"></div>
+        <div class="basic-box"></div>
+        <div class="basic-box"></div>
+        <div class="add-box">
+            <h3>Create new issue card</h3>
+            <form id="card-maker" onsubmit="return false">
+                <input type="text" placeholder="title (max. 25 marks)" id="card-title" maxlength="25" required>
+                <input type="text" placeholder="text (max. 300 marks)" id="other-info" maxlength="300" required>
+                <button class="form-button" type="submit">create new card</button>
+            </form>
+
+        </div>
+
+    </section>
+    <script src="js/warehouse.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/googleCharts.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
