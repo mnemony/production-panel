@@ -54,6 +54,7 @@ input {
     flex-direction: column;
     align-items: center;
 
+
     border-radius: 5px;
     flex-grow: 1;
     max-height: 40px;
@@ -205,10 +206,13 @@ input:focus {
         padding: 4px;
     }
 
-    h2.hot-head {
-        margin: auto;
-        min-width: 300px;
-        font-size: 14px;
+    .hot-head h2 {
+
+        font-size: 18px;
+    }
+
+    .hot-head span {
+        font-size: 11px;
     }
 
 
