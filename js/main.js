@@ -74,8 +74,5 @@ const genNew = function () {
 
 }
 
-
-
-
 addNewCard.addEventListener('submit', genNew);
 orderIt()
