@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Panel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./styles/style.css">
@@ -13,11 +14,10 @@
 </head>
 
 <body>
-    <section>
-        <div></div>
-    </section>
+
+
     <div class="hot-head">
-        <h2>Other info and current issues </h2>
+        <h2>Core info and current issues </h2>
         <span> double click on card to set priority </span>
     </div>
 
@@ -25,38 +25,106 @@
 
 
         <div class="basic-box">
-            <h3>Warehouses current fill</h3>
+            <h3>Warehouses of products current state</h3>
             <div class="warehouse">
                 <li>
-                    <h6>warehouse "North"</h6><span class="bar"><span class="bar-fill" style='width: 90%'></span></span>
+                    <h6>Warehouse "North"</h6><span class="bar"><span class="bar-fill" style='width: 90%'></span></span>
                 </li>
                 <li>
-                    <h6>warehouse "South"</h6><span class="bar"><span class="bar-fill" style='width: 72%'></span></span>
+                    <h6>Warehouse "South"</h6><span class="bar"><span class="bar-fill" style='width: 72%'></span></span>
                 </li>
                 <li>
-                    <h6>warehouse "East"</h6><span class="bar"><span class="bar-fill" style='width: 40%'></span></span>
+                    <h6>Warehouse "East"</h6><span class="bar"><span class="bar-fill" style='width: 40%'></span></span>
                 </li>
                 <li>
-                    <h6>warehouse "West"</h6><span class="bar"><span class="bar-fill" style='width: 44%'></span></span>
+                    <h6>Warehouse "West"</h6><span class="bar"><span class="bar-fill" style='width: 44%'></span></span>
                 </li>
 
             </div>
         </div>
         <div class="basic-box">
-            <h3>Other</h3>
+            <h3>Stock of raw materials in plant available</h3>
+            <div class="warehouse">
+                <li>
+                    <h6>Index X6334</h6><span class="bar"><span class="bar-fill" style='width: 24%'></span></span>
+                </li>
+                <li>
+                    <h6>Index X1002</h6><span class="bar"><span class="bar-fill" style='width: 72%'></span></span>
+                </li>
+                <li>
+                    <h6>Index F0902</h6><span class="bar"><span class="bar-fill" style='width: 90%'></span></span>
+                </li>
+                <li>
+                    <h6>Index X3211</h6><span class="bar"><span class="bar-fill" style='width: 11%'></span></span>
+                </li>
+
+            </div>
         </div>
         <div class="basic-box">
             <h3>Weekly production income share</h3>
             <div id="piechart" style="width: 250px; height: 260px;"></div>
         </div>
         <div class="basic-box">
+            <h3>Monthly reasons for wasting raw material</h3>
+            <div id="piechart2" style="width: 250px; height: 260px;"></div>
+        </div>
+        <div class="basic-box">
+            <h3>New products upcoming</h3>
+            <h5>New raw material in factory: expected release date - next quarter</h5>
+            <table class="tableone" style="width:90%">
+                <tr>
+                    <th><b>Index</b> </th>
+                    <th><b>Raw Material</b> </th>
+                    <th><b>Hall</b> </th>
+                </tr>
+                <tr class="next-line">
+                    <td>Xarf11</td>
+                    <td>X3211</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>Link41</td>
+                    <td>F0902</td>
+                    <td>C</td>
+                </tr>
+                <tr class="next-line">
+                    <td>Xarf16</td>
+                    <td>X3211</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td>Ender7</td>
+                    <td>F0902</td>
+                    <td>C</td>
+                </tr>
+                <tr class="next-line">
+                    <td>Xanfer222</td>
+                    <td>X3211</td>
+                    <td>E</td>
+                </tr>
+                <tr>
+                    <td>Flankr9</td>
+                    <td>X1002</td>
+                    <td>E</td>
+                </tr>
+            </table>
+        </div>
+        <div class="basic-box">
+            <h3>Upcoming renovations and modernisations</h3>
+            <ul class="techlist fa-ul">
+
+                <li><span class="fa-li"><i class="fas fa-bolt"></i></span>Hall A: All machine park renovation</li>
+                <li><span class="fa-li"><i class="fas fa-bolt"></i></span>Hall B: Check some electrical system issues
+                </li>
+                <li><span class="fa-li"><i class="fas fa-bolt"></i></span>Hall C: Modernisation plan ongoing</li>
+                <li><span class="fa-li"><i class="fas fa-bolt"></i></span>Hall D: New machines</li>
+                <li><span class="fa-li"><i class="fas fa-bolt"></i></span>Hall E: Still unfinished</li>
+
+
+            </ul>
 
         </div>
-        <div class="basic-box"></div>
-        <div class="basic-box"></div>
-        <div class="basic-box"></div>
-        <div class="basic-box"></div>
-        <div class="basic-box"></div>
+
         <div class="add-box">
             <h3>Create new issue card</h3>
             <form id="card-maker" onsubmit="return false">
@@ -67,7 +135,71 @@
 
         </div>
 
+
     </section>
+    <div class="hot-head">
+        <h2>Production menu</h2>
+        <span>Any needed info </span>
+    </div>
+    <div class="container">
+        <div class="panel first">
+            <div>
+
+                <h3> </i>New Orders <i class="fas fa-angle-double-right"></i></h3>
+                <p> Access to any information about new orders, long-term stuff, reailization dates and other</p>
+            </div>
+            <div class="links">
+                <a href="#">Current orders</a>
+                <a href="#">Long-term demand</a>
+                <a href="#">Uncertain stuff</a>
+                <a href="#">Archive</a>
+            </div>
+
+
+        </div>
+        <div class="panel next second">
+            <div>
+                <h3>Product Info <i class="fas fa-dna"></i></h3>
+                <p>Access to any information about new products, specifications, upcoming projects and other</p>
+            </div>
+
+
+            <div class="links">
+                <a href="#">Specifications</a>
+                <a href="#">New products</a>
+                <a href="#">Active projects</a>
+                <a href="#">Archive</a>
+            </div>
+        </div>
+        <div class="panel third">
+            <div>
+                <h3>Logistic Menu <i class="fas fa-pager"></i></h3>
+                <p>Access to any information about stock, warehouses, upcoming suplly, shipment and other</p>
+            </div>
+
+
+            <div class="links">
+                <a href="#">Product stock</a>
+                <a href="#">Raw materials stock</a>
+                <a href="#">Suplly</a>
+                <a href="#">Shipment</a>
+            </div>
+        </div>
+        <div class="panel next last">
+            <div>
+                <h3>Comunication <i class="far fa-smile"></i></h3>
+                <p>Access to any information about meetings, comunication chanells, e-mail and Global PM</p>
+            </div>
+            <div class="links">
+                <a href="#">Upcoming meetings</a>
+                <a href="#">E-mail</a>
+                <a href="#">Chat</a>
+                <a href="#">PM</a>
+            </div>
+        </div>
+    </div>
+
+
     <script src="./js/warehouse.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="./js/googleCharts.js"></script>

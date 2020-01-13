@@ -37,8 +37,6 @@ h3 {
     text-align: center;
 }
 
-
-
 input {
     border: 0;
     border-bottom: 3px solid #3480a0;
@@ -46,6 +44,53 @@ input {
     margin: 10px;
 }
 
+i {
+    color: #335b69;
+    margin-left: 3px;
+}
+
+.container {
+    display: flex;
+    margin: 15px 50px 20px 50px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.panel {
+    width: 290px;
+    height: 285px;
+    background-color: rgb(214, 221, 221);
+    padding: 20px;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.panel a {
+    text-decoration: none;
+    color: rgba(22, 136, 107, 0.781);
+    margin: 3px;
+}
+
+.next {
+    background-color: rgb(195, 218, 218);
+}
+
+.first {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.last {
+    border-radius: 0px 10px 10px 0px;
+}
 
 .hot-head {
     display: flex;
@@ -76,6 +121,7 @@ input {
     transition-property: box-shadow;
     transition-duration: 0.35s;
 
+
 }
 
 .add-box {
@@ -94,6 +140,10 @@ input {
 
 .removable {
     background-color: rgb(184, 212, 212);
+}
+
+.removable p {
+    word-break: break-all;
 }
 
 .basic-box:hover {
@@ -142,6 +192,23 @@ input {
     padding-left: 6px;
 }
 
+table,
+th,
+td {
+    border: 2px solid #203a43;
+    border-collapse: collapse;
+    color: #203a43;
+    margin-bottom: 38px;
+}
+
+.next-line {
+    background-color: rgb(191, 207, 203);
+}
+
+.basic-box h5 {
+    margin: 15px;
+}
+
 /* progress bars */
 .warehouse {
 
@@ -174,7 +241,14 @@ input {
     background: rgba(139, 207, 36, 0.801);
 }
 
+.techlist {
+    list-style: none;
+    margin-bottom: 45px;
+}
 
+.techlist li {
+    margin: 4px;
+}
 
 #card-maker {
     display: flex;
@@ -195,6 +269,83 @@ input:focus {
     outline: 0;
 }
 
+.plan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:1433px) {
+
+
+    .first {
+        border-radius: 10px 0px 0px 0px;
+    }
+
+
+    .third {
+        border-radius: 0px 10px 0px 0px;
+    }
+
+    .last {
+        border-radius: 0px 0px 10px 10px;
+        background-color: #a6cad6;
+    }
+
+    .last h3 {
+        text-align: left;
+    }
+
+}
+
+@media (max-width:1103px) {
+
+
+    .first {
+        border-radius: 10px 0px 0px 0px;
+        background-color: rgb(195, 218, 218);
+    }
+
+    .second {
+        border-radius: 0px 10px 0px 0px;
+        background-color: rgb(214, 221, 221);
+    }
+
+    .third {
+        border-radius: 0px 0px 0px 10px;
+
+    }
+
+    .last {
+        border-radius: 0px 0px 10px 0px;
+    }
+
+    .last h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width:760px) {
+
+
+    .first {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .second {
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .third {
+        border-radius: 0px 0px 0px 0px;
+        background-color: rgb(195, 218, 218);
+    }
+
+    .last {
+        border-radius: 0px 0px 10px 10px;
+        background-color: rgb(214, 221, 221);
+    }
+}
 
 @media (max-width:500px) {
 
@@ -215,10 +366,9 @@ input:focus {
 
 }
 
-@media (max-width:350px) {
+@media (max-width:390px) {
     .hot-head {
-        min-width: 300px;
-        margin: auto;
+        margin: 10;
     }
 
     .hot-head h2 {
