@@ -8,6 +8,7 @@ let lastValue = 0;
 // remove additional card
 const deleteCurrrentCard = (e) => {
     e.target.parentNode.remove();
+    cardboxes = document.querySelectorAll('.basic-box')
 }
 
 // make doubleclicked card first 
@@ -36,7 +37,7 @@ let orderIt = function () {
 // create extra card to panel
 
 const genNew = function () {
-    if (cardboxes.length > 14) {
+    if (cardboxes.length > 12) {
         return alert('Too much cases ongoing. Solve them first.')
     }
     if (cadVal.value.length === 0) {
